@@ -1,0 +1,67 @@
+{
+  "name": "systemjs",
+  "version": "0.19.38",
+  "description": "Universal dynamic module loader",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/systemjs/systemjs.git"
+  },
+  "author": {
+    "name": "Guy Bedford"
+  },
+  "license": "MIT",
+  "files": [
+    "index.js",
+    "dist"
+  ],
+  "dependencies": {
+    "when": "^3.7.5"
+  },
+  "devDependencies": {
+    "babel-core": "^5.8.22",
+    "qunit": "^0.6.2",
+    "traceur": "0.0.105",
+    "typescript": "^1.6.2",
+    "uglify-js": "~2.4.23"
+  },
+  "scripts": {
+    "test:browser": "make test",
+    "perf": "node bench/normalize-perf.js",
+    "build": "make",
+    "test": "npm run test:babel && npm run test:traceur && npm run test:typescript",
+    "test:babel": "qunit -c s:./index.js -t ./test/test-babel.js",
+    "test:traceur": "qunit -c s:./index.js -t ./test/test-traceur.js",
+    "test:typescript": "qunit -c s:./index.js -t ./test/test-typescript.js"
+  },
+  "gitHead": "8ff255f20daf6f149d59cfc226eee007e59dfa3d",
+  "bugs": {
+    "url": "https://github.com/systemjs/systemjs/issues"
+  },
+  "homepage": "https://github.com/systemjs/systemjs#readme",
+  "_id": "systemjs@0.19.38",
+  "_shasum": "e52e24d502d2b9f0b56d77c57ede67d0916bc4c5",
+  "_from": "systemjs@latest",
+  "_npmVersion": "3.10.3",
+  "_nodeVersion": "6.3.1",
+  "_npmUser": {
+    "name": "guybedford",
+    "email": "guybedford@gmail.com"
+  },
+  "dist": {
+    "shasum": "e52e24d502d2b9f0b56d77c57ede67d0916bc4c5",
+    "tarball": "https://registry.npmjs.org/systemjs/-/systemjs-0.19.38.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "guybedford",
+      "email": "guybedford@gmail.com"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/systemjs-0.19.38.tgz_1473177952122_0.14318925747647882"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/systemjs/-/systemjs-0.19.38.tgz",
+  "readme": "ERROR: No README data found!"
+}
